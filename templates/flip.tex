@@ -1,0 +1,126 @@
+\documentclass[aspectratio=169]{beamer}
+
+% This template adds top-level and section-level navigation if you use \csection.
+% The navigation system generates .lbf%d auxillary files for each section, and
+% it generates a .lun for the top-level navigation.
+
+\title{CHANGEME}
+\subtitle{CHANGEME}
+\author{CHANGEME}
+\institute{CHANGEME}
+\date{Updated \today}
+
+%%% BEAMER THEME
+\definecolor{StructureColor}{rgb}{0,0,0}
+\definecolor{BackgroundColor}{rgb}{1,1,1}
+\setbeamercolor{structure}{fg=StructureColor}
+\setbeamercolor{background canvas}{bg=BackgroundColor}
+\newcommand{\fgbg}[2]{%
+	\definecolor{StructureColor}{rgb}{#1}%
+	\definecolor{BackgroundColor}{rgb}{#2}%
+}
+% The above may be used e.g. when switching sections that are better typeset
+% with a different color scheme.
+
+%%% TABLE-RELATED ADJUSTMENTS
+\usepackage{array}
+\renewcommand{\arraystretch}{1.2}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{multirow}
+
+%%% MATH AND SCIENCE NOTATION PACKAGES
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+
+%%% MISC STANDARD LAYOUT ADJUSTMENTS
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{parskip}
+\usepackage{xpatch}
+\xpatchcmd{\itemize}%
+	{\def\makelabel}%
+	{\setlength{\itemsep}{0ex}\setlength{\parsep}{0.8ex}\def\makelabel}%
+	{}{}
+
+%%% MISC
+\usepackage{graphicx}
+\graphicspath{{images}}
+
+%%% NAVIGATION SYSTEM
+\makeatletter
+\newcommand\listofframes{\vfill\@starttoc{lbf\thesection}}
+\newcommand\listofunits{\vfill\@starttoc{lun}}
+\makeatother
+\newcommand{\csection}[1]{
+	\section{#1}
+	\begin{frame}[label=#1]
+		\plainframetitle{#1}
+		\begin{multicols}{2}
+			\footnotesize\listofframes
+		\end{multicols}
+		\addtocontents%
+			{lun}%
+			{%
+				\protect\contentsline{section}{{%
+					\protect\makebox[13em][l]{%
+						\protect\hyperlink{page.\insertframenumber}%
+							{\protect\usebeamercolor[fg]{structure}\insertframetitle}%
+						\hfill%
+					}%
+					\insertframenumber\vfill
+				}}{}{}%
+			}
+	\end{frame}
+}
+\let\plainframetitle\frametitle
+\renewcommand{\frametitle}[1]{%
+	\subsection{#1}
+	\addtocontents%
+		{lbf\thesection}%
+		{%
+			\protect\contentsline{subsection}{%
+				\protect\makebox[19.5em][l]{%
+					\protect\hyperlink{page.\insertframenumber}%
+						{\protect\usebeamercolor[fg]{structure}#1}%
+					{\color{lightgray}\dotfill}\insertframenumber%
+				}%
+			}{}{}%
+		}
+	\plainframetitle{#1}
+}
+\usepackage[export]{adjustbox}
+\setbeamertemplate{navigation symbols}{%
+	\adjustbox{valign=b}{%
+		\usebeamerfont{footline}%
+		\hyperlink{Preamble}{IGCSE Physics}
+		/
+		\hyperlink{\insertsection}{\insertsection}%
+		\makebox[5em][r]{\insertframenumber/\inserttotalframenumber}%
+	}
+}
+
+
+
+\begin{document}
+\section{Preamble}
+\maketitle
+
+\begin{frame}{Information}
+	CHANGEME
+\end{frame}
+
+\begin{frame}[label=Preamble]{Contents} % label for back navigation
+	\listofunits
+\end{frame}
+
+\fgbg{0.2,0.2,0}{1,0.9,0.9}
+\csection{CHANGEME}
+
+\begin{frame}{CHANGEME}
+	CHANGEME
+\end{frame}
+
+\end{document}

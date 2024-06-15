@@ -54,10 +54,10 @@
 \setlength{\columnsep}{0.8cm}
 \setlength{\columnseprule}{0.4pt}
 \lehead[]{Page~\normalsize\pagemark}
-\cehead[]{REPLACEME}
+\cehead[]{CHANGEME}
 \rehead[]{\rightmark}
 \lohead[]{\leftmark}
-\cohead[]{REPLACEME}
+\cohead[]{CHANGEME}
 \rohead[]{Page~\normalsize\pagemark}
 \lefoot[]{}
 \cefoot[]{}
@@ -103,9 +103,9 @@
 	colorlinks=true,
 	allcolors={blue!40!black},
 %	allcolors=black,
-	pdftitle={REPLACEME},
-	pdfauthor={REPLACEME},
-	pdfsubject={REPLACEME}
+	pdftitle={CHANGEME},
+	pdfauthor={CHANGEME},
+	pdfsubject={CHANGEME}
 }
 \end_preamble
 \options parskip=half-,twocolumn,twoside,9pt
@@ -142,9 +142,9 @@ multicol
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\pdf_title "REPLACEME"
-\pdf_author "REPLACEME"
-\pdf_subject "REPLACEME"
+\pdf_title "CHANGEME"
+\pdf_author "CHANGEME"
+\pdf_subject "CHANGEME"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
