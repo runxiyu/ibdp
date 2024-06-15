@@ -1,0 +1,39 @@
+# --- EMACS BACKUPS ----------------------------------------------------
+*~
+\#*#
+
+# --- MACOS CACHE ------------------------------------------------------
+.DS_Store
+
+# --- LATEX AUXILLARY FILES --------------------------------------------
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+# --- COMPILED DOCUMENTS -----------------------------------------------
+*.pdf
+*.ps
+*.dvi
+
+# --- COMPILED PROGRAMS ------------------------------------------------
+# Remember to use .bin when compiling to binaries; I used to use .elf
+# but not everyone's system uses elfs, and we don't need .macho, .exe,
+# .elf, and every other executable format
+*.o
+*.bin
+__pycache__
+
+# --- INCLUSIONS -------------------------------------------------------
+# Everything in image folders should be included, even if they are
+# otherwise ignored, e.g. PDFs
+!img/**
+!**/img/**
+
+
+# vim: colorcolumn=73 tw=72
