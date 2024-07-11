@@ -1,6 +1,25 @@
 # An Anthology by Langston Hughes
 
-**Note:** I was unable to find a published work with this exact name.
+## Poems
+The following 16 poems were taught to the Class of 2025. I hereby assume that
+we have the same poems.
+
+1. Harlem
+2. I, Too
+3. Mother to Son
+4. The Negro Speaks of Rivers
+5. Remember
+6. The Weary Blues
+7. Let America Be America Again
+8. Who But The Lord?
+9. Brass Spittoons
+10. Daybreak in Alabama
+11. Theme for English B
+12. Dream Variations
+13. As I Grew Older
+14. Dust Bowl
+15. You and Your Whole Race
+16. Crossing Jordan
 
 ## Copyright status
 1. Poems published before 1 January 1929 are public domain in all relevant
