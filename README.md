@@ -30,6 +30,11 @@ other content; for example, do not use
 `\includegraphics{CC-BY-NC-SA-licensed-file}` in a file that is supposed
 to be licensed CC BY-SA.
 
+Another repository called `ibdp_extras` with relatively questionable
+copyright is also provided but has very limited access. Please contact
+me in real life or at my [school
+email](mailto:s22537@stu.ykpaoschool.cn) to request access.
+
 This is not legal advice.
 
 ## Disclaimer
