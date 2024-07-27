@@ -1,6 +1,6 @@
 # Runxi Yu's IBDP Revision Notes
 
-![Codeberg CI Badge](https://ci.codeberg.org/api/badges/13564/status.svg)
+[![Codeberg CI](https://ci.codeberg.org/api/badges/13564/status.svg)](https://ci.codeberg.org/repos/13564)
 
 ## Copyright and licensing
 
