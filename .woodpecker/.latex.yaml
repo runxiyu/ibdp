@@ -1,0 +1,8 @@
+image: registry.gitlab.com/islandoftex/images/texlive:latest
+
+build:
+  script:
+    - make
+  artifacts:
+    paths:
+      - ./build/*.pdf
