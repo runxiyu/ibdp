@@ -1,8 +1,11 @@
-image: registry.gitlab.com/islandoftex/images/texlive:latest
-
-build:
-  script:
-    - make
-  artifacts:
-    paths:
-      - ./build/*.pdf
+steps:
+  build:
+    when:
+      branch: []
+      event: [push, manual]
+    image: registry.gitlab.com/islandoftex/images/texlive:latest
+    commands:
+      - make
+    artifacts:
+      paths:
+        - ./build/*.pdf
