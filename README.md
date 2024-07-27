@@ -1,5 +1,7 @@
 # Runxi Yu's IBDP Revision Notes
 
+![Codeberg CI Badge](https://ci.codeberg.org/api/badges/13564/status.svg)
+
 ## Copyright and licensing
 
 Most of this repository is licensed under CC BY-SA 4.0 International,
