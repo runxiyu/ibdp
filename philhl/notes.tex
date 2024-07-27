@@ -1,0 +1,148 @@
+\documentclass[parskip=half-,twocolumn,twoside]{scrartcl}
+
+\title{TITLE}
+\subtitle{SUBTITLE}
+\author{AUTHOR}
+\date{Updated \DTMnow}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\setcounter{secnumdepth}{2}
+\usepackage{url}
+\usepackage{enumitem}
+\setlist[itemize]{
+	wide=0pt,
+	itemsep=0ex,
+	leftmargin=1.2em,
+	align=right,
+	labelwidth=0.8em,
+	labelsep=0.4em,
+	topsep=0ex,
+	itemsep=0ex,
+	parsep=0.4ex,
+}
+\setlist[enumerate]{
+	wide=0pt,
+	itemsep=0ex,
+	leftmargin=1.2em,
+	align=right,
+	labelwidth=0.8em,
+	labelsep=0.4em,
+	topsep=0ex,
+	itemsep=0ex,
+	parsep=0.4ex,
+}
+
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+\setmathfont{TeX Gyre DejaVu Math}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	top=0.8cm,
+	bottom=1cm,
+	left=1cm,
+	right=1cm,
+	includehead
+}
+
+\usepackage[markcase=upper, headsepline]{scrlayer-scrpage}
+\setlength{\columnsep}{0.8cm}
+\setlength{\columnseprule}{0.4pt}
+\lehead[]{Page~\normalsize\pagemark}
+\cehead[]{IB Philosophy Revision}
+\rehead[]{\rightmark}
+\lohead[]{\leftmark}
+\cohead[]{IB Philosophy Revision}
+\rohead[]{Page~\normalsize\pagemark}
+\lefoot[]{}
+\cefoot[]{}
+\refoot[]{}
+\lofoot[]{}
+\cofoot[]{}
+\rofoot[]{}
+\setkomafont{pageheadfoot}{\normalfont\normalsize}
+\setkomafont{pagenumber}{\normalfont\normalsize}
+\renewcommand{\sectionmark}[1]{%
+	\markboth%
+		{{#1}}%
+		{{#1}}%
+} % \thesection may be used here if section numbers are desired
+
+\usepackage{datetime2}
+
+\usepackage[
+	type={CC},
+	modifier={by-sa},
+	version={4.0},
+	hyphenation={RaggedRight},
+]{doclicense}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+	bookmarks=true,
+	bookmarksnumbered=false,
+	bookmarksopen=true,
+	bookmarksopenlevel=2,
+	breaklinks=true,
+%	pdfborder={0 0 1},
+	backref=false,
+	colorlinks=true,
+	allcolors={blue!40!black},
+%	allcolors=black,
+	pdftitle={CHANGEME},
+	pdfauthor={CHANGEME},
+	pdfsubject={CHANGEME}
+}
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\subject{SUBJECT}
+\maketitle
+
+\section*{Disclaimer}
+
+In no event unless required by applicable law will any copyright holder,
+author, or any other party, be liable to you for damages, including
+any general, special, incidental or consequential damages arising
+out of the use or inability to use this document (including but not
+limited to loss of sanity or your knowledge being rendered inaccurate
+or losses sustained by you or third parties), even if such holder,
+author, or other party has been advised of the possibility of such
+damages. If the disclaimer and limitation of liability hereby provided
+cannot be given local legal effect according to their terms, reviewing
+courts shall apply local law that most closely approximates an absolute
+waiver of all civil liability in connection with this document.
+
+\section*{Copyright}
+
+{\small\doclicenseThis}
+
+\section*{Information}
+\begin{itemize}
+\item Repo: \url{https://git.runxiyu.org/runxiyu/ibdp.git}
+\end{itemize}
+\newpage\tableofcontents{}
+
+\clearpage{}
+
+\section{Section}
+
+Content
+
+\appendix
+
+\section{Appendix}
+
+Content
+\end{document}
